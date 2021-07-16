@@ -1,0 +1,21 @@
+#new-to-amazon {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: lightgray;
+  }
+
+#new-to-amazon::before,
+#new-to-amazon::after {
+    content: '';
+    flex-grow: 1;
+    border-bottom: 1px solid lightgray;
+
+}
+#new-to-amazon:not(:empty)::before {
+    margin-right: .25em;
+}
+ 
+#new-to-amazon:not(:empty)::after {
+    margin-left: .25em;
+}
